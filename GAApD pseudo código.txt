@@ -13,7 +13,18 @@ Tela de Login(){
     FACA{
         Escolha entre: Fazer Login; Criar Novo Usuario;
         SE Ecolher Fazer Login{
-            EXIBA();
+            FACA{
+                EXIBA("digite o nome de Usuario");
+                LEIA(Nome de Usuario);
+                EXIBA("digite a senha do Usuario");
+                LEIA(Senha do Usuario);
+                SE Nome de Usuario nao encontrado{
+                    EXIBA("O Usuario inserido nao existe")
+                }SENAO SE Senha incorreta{
+                    EXIBA("A senha informada esta incorreta");
+                }
+            }ENQUANTO(O Usuario nao existe ou a senha esta incorreta)
+            
         }SENAO{
             FACA{
                 EXIBA("Qual o Nome do novo Usuario");
