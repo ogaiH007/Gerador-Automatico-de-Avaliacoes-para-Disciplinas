@@ -1,0 +1,10 @@
+Main(){
+Iniciar Programa
+
+SE possuir arquivo de informações{
+exibir tela de login();
+}SENÂO{
+criar informações;
+Iniciar Tutorial
+}
+}
