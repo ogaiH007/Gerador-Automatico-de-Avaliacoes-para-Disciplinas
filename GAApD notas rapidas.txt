@@ -1,0 +1,24 @@
+Questões:
+Enunciado
+Opções de resposta
+nivel de dificuldade
+Disciplina
+
+Disciplinas:
+professor
+nome
+curso
+turma
+
+
+===================================================================================================
+Curso
+Turma
+Materias{
+ID_Materia
+Nome_Materia
+Prof_Respon_Materia
+}
+Avaliações
+Questões -> Multipla Escolha; VerdadeiroFalso; Aberta
+Usuario
