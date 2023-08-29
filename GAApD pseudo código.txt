@@ -1,10 +1,37 @@
 Main(){
-Iniciar Programa
+    Iniciar Programa
 
-SE possuir arquivo de informações{
-exibir tela de login();
-}SENÂO{
-criar informações;
-Iniciar Tutorial
+    SE possuir arquivo de informacoes{
+        exibir tela de login();
+    }SENAO{
+        criar arquivo de informacoes;
+        Iniciar Tutorial();
+    }
 }
+
+Tela de Login(){
+    FACA{
+        Escolha entre: Fazer Login; Criar Novo Usuario;
+        SE Ecolher Fazer Login{
+            EXIBA();
+        }SENAO{
+            FACA{
+                EXIBA("Qual o Nome do novo Usuario");
+                LEIA(Nome do Novo Usuario);
+                SE Usuario Ja Existe{
+                    EXIBA("O Nome de Usuario ja esta registrado");
+                }
+            }ENQUANTO(USUARIO INFORMADO EXISTIR)
+            FACA{
+                EXIBA("digite qual sera a senha do Usuario: " + 
+                nome do novo Usuario);
+                LEIA(Senha do Usuario);
+                EXIBA("Repita da senha");
+                LEIA(Senha do Usuario);
+                SE A segunda senha e diferente da primeira{
+                   EXIBA("Ambas as senhas nao sao iguais");
+                }
+            }ENQUANTO(a segunda senha for diferente da primeira)
+        }
+    }ENQUANTO(Escolher criar novo Usuario)
 }
