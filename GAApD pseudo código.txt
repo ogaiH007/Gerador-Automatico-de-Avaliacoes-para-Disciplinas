@@ -24,7 +24,7 @@ Tela de Login(){
                     EXIBA("A senha informada esta incorreta");
                 }
             }ENQUANTO(O Usuario nao existe ou a senha esta incorreta)
-            
+             
         }SENAO{
             FACA{
                 EXIBA("Qual o Nome do novo Usuario");
