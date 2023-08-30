@@ -1,5 +1,5 @@
 Main(){
-    Iniciar Programa
+    Iniciar Programa;
 
     SE possuir arquivo de informacoes{
         exibir tela de login();
@@ -7,6 +7,8 @@ Main(){
         criar arquivo de informacoes;
         Iniciar Tutorial();
     }
+
+    Fechar Programa;
 }
 
 Tela de Login(){
@@ -23,7 +25,7 @@ Tela de Login(){
                 }SENAO SE Senha incorreta{
                     EXIBA("A senha informada esta incorreta");
                 }
-            }ENQUANTO(O Usuario nao existe ou a senha esta incorreta)
+            }ENQUANTO(O Usuario nao existe OU a senha esta incorreta)
              
         }SENAO{
             FACA{
