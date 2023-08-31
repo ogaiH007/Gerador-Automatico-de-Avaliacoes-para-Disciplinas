@@ -26,7 +26,7 @@ Tela de Login(){
                     EXIBA("A senha informada esta incorreta");
                 }
             }ENQUANTO(O Usuario nao existe OU a senha esta incorreta)
-             
+            
         }SENAO{
             FACA{
                 EXIBA("Qual o Nome do novo Usuario");
@@ -39,7 +39,7 @@ Tela de Login(){
                 EXIBA("digite qual sera a senha do Usuario: " + 
                 nome do novo Usuario);
                 LEIA(Senha do Usuario);
-                EXIBA("Repita da senha");
+                EXIBA("Repita a senha");
                 LEIA(Senha do Usuario);
                 SE A segunda senha e diferente da primeira{
                    EXIBA("Ambas as senhas nao sao iguais");
@@ -48,3 +48,23 @@ Tela de Login(){
         }
     }ENQUANTO(Escolher criar novo Usuario)
 }
+
+Tela Selecao de Disciplinas(){
+    FACA{
+        SE Usuario possui Disciplinas{
+            EXIBA("Qual disciplina deseja utilizar");
+            LEIA(disciplina escolhida);
+
+
+        }SENAO{
+            EXIBA("Adicione uma nova Disciplina:");
+            EXIBA("Qual sera o nome da disciplina");
+            LEIA(Disciplina.nome);
+            EXIBA("Qual e o nome do professor");
+            LEIA(Disciplina.professor);
+            EXIBA("A qual curso essa Disciplina pertence");
+            LEIA(Disciplina.curso);
+        }
+    } ENQUANTO (Usuario nao possuir disciplinas)
+}
+
