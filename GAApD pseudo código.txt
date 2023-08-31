@@ -68,3 +68,8 @@ Tela Selecao de Disciplinas(){
     } ENQUANTO (Usuario nao possuir disciplinas)
 }
 
+Tela de Selecao de Turmas(){
+    SE {
+
+    }
+}
