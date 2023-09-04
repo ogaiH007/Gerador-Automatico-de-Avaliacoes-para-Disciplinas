@@ -3,7 +3,7 @@ package main;
 public class Questao {
 	private int idQuestao;
 	protected String enunciado;
-	protected int nivelDificuldade;
+	protected float nivelDificuldade;
 	
 	public Questao(int idQuestao, String enunciado, int nivelDificuldade) {
 		super();
@@ -24,10 +24,10 @@ public class Questao {
 	public void setEnunciado(String enunciado) {
 		this.enunciado = enunciado;
 	}
-	public int getNivelDificuldade() {
+	public float getNivelDificuldade() {
 		return nivelDificuldade;
 	}
-	public void setNivelDificuldade(int nivelDificuldade) {
+	public void setNivelDificuldade(float nivelDificuldade) {
 		this.nivelDificuldade = nivelDificuldade;
 	}
 	
