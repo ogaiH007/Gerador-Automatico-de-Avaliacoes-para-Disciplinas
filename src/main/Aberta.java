@@ -1,15 +1,13 @@
 package main;
 
 public class Aberta extends Questao{
-	private String resposta;
 	private String respostaAproximada;
 	
-	public String getResposta() {
-		return resposta;
+	public Aberta(int idQuestao, String enunciado, int nivelDificuldade, String respostaAproximada) {
+		super(idQuestao, enunciado, nivelDificuldade);
+		this.respostaAproximada = respostaAproximada;
 	}
-	public void setResposta(String resposta) {
-		this.resposta = resposta;
-	}
+	
 	public String getRespostaAproximada() {
 		return respostaAproximada;
 	}
