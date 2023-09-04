@@ -5,13 +5,6 @@ public class Questao {
 	protected String enunciado;
 	protected float nivelDificuldade;
 	
-	public Questao(int idQuestao, String enunciado, int nivelDificuldade) {
-		super();
-		this.idQuestao = idQuestao;
-		this.enunciado = enunciado;
-		this.nivelDificuldade = nivelDificuldade;
-	}
-	
 	public int getIdQuestao() {
 		return idQuestao;
 	}
