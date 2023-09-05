@@ -1,6 +1,6 @@
 package main;
 
-public class Questao {
+public abstract class Questao {
 	private int idQuestao;
 	protected String enunciado;
 	protected float nivelDificuldade;
