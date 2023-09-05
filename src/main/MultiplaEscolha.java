@@ -8,8 +8,8 @@ public class MultiplaEscolha extends Questao{
 	public String[] getAlternativas() {
 		return alternativas;
 	}
-	public void setAlternativas(String[] alternativas) {
-		this.alternativas = alternativas;
+	public void setAlternativas(String alternativa, int posicaoAlternativa) {
+		this.alternativas[posicaoAlternativa] = alternativa;
 	}
 	public int getAlternativaCorreta() {
 		return alternativaCorreta;
